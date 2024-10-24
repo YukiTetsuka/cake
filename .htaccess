@@ -1,0 +1,12 @@
+# URLリライトの設定を開始
+RewriteEngine on
+
+# .htmlファイルが存在する場合、それにリライト
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# .phpファイルが存在する場合、それにリライト
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]
