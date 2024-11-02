@@ -1,0 +1,47 @@
+html{
+    background: #CBDCEB;
+ }
+
+ body{
+    margin: 0;
+ }
+
+ a{
+    color: #CBDCEB;
+    text-decoration: none;
+ }
+
+ .ddmenu {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    background: #608BC1;
+    margin: 0;
+ }
+
+ .ddmenu li{
+    background: #608BC1;
+    padding: 10px 30px;
+ }
+
+ .ddmenu li ul{
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    padding-top: 0px;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+ }
+
+ .ddmenu li:hover{
+    background: #133E87;
+    color: #CBDCEB;
+ }
+
+ .ddmenu li:hover ul{
+    opacity: 1;
+    padding-top: 5px;
+ }
